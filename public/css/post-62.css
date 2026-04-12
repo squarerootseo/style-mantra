@@ -3,41 +3,41 @@
 	font-style: normal;
 	font-weight: 200;
 	font-display: auto;
-	src: url('https://stylemantra.co.in/wp-content/uploads/2025/03/ClashDisplay-Extralight.woff2') format('woff2');
+	src: url('/fonts/ClashDisplay-Extralight.woff2') format('woff2');
 }
 @font-face {
 	font-family: 'Clash Display';
 	font-style: normal;
 	font-weight: 300;
 	font-display: auto;
-	src: url('https://stylemantra.co.in/wp-content/uploads/2025/03/ClashDisplay-Light.woff2') format('woff2');
+	src: url('/fonts/ClashDisplay-Light.woff2') format('woff2');
 }
 @font-face {
 	font-family: 'Clash Display';
 	font-style: normal;
 	font-weight: 400;
 	font-display: auto;
-	src: url('https://stylemantra.co.in/wp-content/uploads/2025/03/ClashDisplay-Regular.woff2') format('woff2');
+	src: url('/fonts/ClashDisplay-Regular.woff2') format('woff2');
 }
 @font-face {
 	font-family: 'Clash Display';
 	font-style: normal;
 	font-weight: 500;
 	font-display: auto;
-	src: url('https://stylemantra.co.in/wp-content/uploads/2025/03/ClashDisplay-Medium.woff2') format('woff2');
+	src: url('/fonts/ClashDisplay-Medium.woff2') format('woff2');
 }
 @font-face {
 	font-family: 'Clash Display';
 	font-style: normal;
 	font-weight: 600;
 	font-display: auto;
-	src: url('https://stylemantra.co.in/wp-content/uploads/2025/03/ClashDisplay-Semibold.woff2') format('woff2');
+	src: url('/fonts/ClashDisplay-Semibold.woff2') format('woff2');
 }
 @font-face {
 	font-family: 'Clash Display';
 	font-style: normal;
 	font-weight: 700;
 	font-display: auto;
-	src: url('https://stylemantra.co.in/wp-content/uploads/2025/03/ClashDisplay-Bold.woff2') format('woff2');
+	src: url('/fonts/ClashDisplay-Bold.woff2') format('woff2');
 }
 /* End Custom Fonts CSS */
