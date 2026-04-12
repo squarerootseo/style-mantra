@@ -12,5 +12,10 @@ export default defineConfig({
       cssMinify: true,
       minify: 'esbuild',
     },
+    server: {
+      hmr: {
+        overlay: false,
+      },
+    },
   },
 });
