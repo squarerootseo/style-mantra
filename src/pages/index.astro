@@ -1,4 +1,4 @@
-﻿---
+---
 // Direct DOM Replica — 100% Visual Parity  
 // Exact scraped HTML + all WP stylesheets/scripts preserved
 ---
@@ -2323,5 +2323,135 @@ const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(
 
 
 
+<style>
+/* Mobile Menu Slide-Out */
+.sm-mobile-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 99998;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.sm-mobile-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+.sm-mobile-panel {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 280px;
+  height: 100%;
+  background: #fff;
+  z-index: 99999;
+  transition: right 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: -4px 0 20px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+}
+.sm-mobile-panel.active {
+  right: 0;
+}
+.sm-mobile-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 20px;
+  border-bottom: 1px solid #eee;
+}
+.sm-mobile-panel-header span {
+  font-family: 'Jost', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #222;
+}
+.sm-mobile-close {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: #8B0000;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+.sm-mobile-close:hover {
+  background: #a00;
+}
+.sm-mobile-nav {
+  list-style: none;
+  margin: 0;
+  padding: 20px 0;
+}
+.sm-mobile-nav li {
+  border-bottom: 1px solid #f0f0f0;
+}
+.sm-mobile-nav a {
+  display: block;
+  padding: 14px 24px;
+  font-family: 'Jost', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #222;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+.sm-mobile-nav a:hover {
+  background: #f8f0f0;
+  color: #8B0000;
+}
+</style>
+
+<!-- Mobile Menu Panel -->
+<div class="sm-mobile-overlay" id="smMobileOverlay"></div>
+<div class="sm-mobile-panel" id="smMobilePanel">
+  <div class="sm-mobile-panel-header">
+    <span>Menu</span>
+    <button class="sm-mobile-close" id="smMobileClose" aria-label="Close menu">&times;</button>
+  </div>
+  <ul class="sm-mobile-nav">
+    <li><a href="/">Home</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/our-course">Our Course</a></li>
+    <li><a href="/contact">Contact</a></li>
+  </ul>
+</div>
+
+<script is:inline>
+(function() {
+  var toggleBtns = document.querySelectorAll('.jet-mobile-menu__toggle');
+  var overlay = document.getElementById('smMobileOverlay');
+  var panel = document.getElementById('smMobilePanel');
+  var closeBtn = document.getElementById('smMobileClose');
+
+  function openMenu() {
+    overlay.classList.add('active');
+    panel.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeMenu() {
+    overlay.classList.remove('active');
+    panel.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  toggleBtns.forEach(function(btn) {
+    btn.addEventListener('click', openMenu);
+  });
+  if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+  if (overlay) overlay.addEventListener('click', closeMenu);
+
+  // Close on Escape
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeMenu();
+  });
+})();
+</script>
 </body>
 </html>

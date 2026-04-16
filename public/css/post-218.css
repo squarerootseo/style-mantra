@@ -41,3 +41,12 @@
 	src: url('/fonts/ClashDisplay-Bold.woff2') format('woff2');
 }
 /* End Custom Fonts CSS */
+/* Fix: Force shadow-text (JKit heading decoration) to render as subtle outline, not solid black */
+.shadow-text {
+    color: transparent !important;
+    -webkit-text-fill-color: transparent !important;
+    -webkit-text-stroke-width: 1px !important;
+    -webkit-text-stroke-color: rgba(16,16,16,0.08) !important;
+    z-index: 0 !important;
+    pointer-events: none !important;
+}
