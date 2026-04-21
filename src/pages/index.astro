@@ -111,6 +111,65 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
       display: none !important;
     }
     body.dialog-lightbox-body::before, body::after { display: none !important; }
+
+    /* Global Brand Colors */
+    .elementor-button {
+      background-color: #B01615 !important;
+    }
+    .elementor-element-6914b85a .elementor-button {
+      background-color: transparent !important;
+      border: 2px solid #B01615 !important;
+      transition: all 0.3s ease;
+    }
+    .elementor-element-6914b85a .elementor-button .elementor-button-text {
+      color: #B01615 !important;
+      transition: all 0.3s ease;
+    }
+    .elementor-element-6914b85a .elementor-button:hover {
+      background-color: #B01615 !important;
+    }
+    .elementor-element-6914b85a .elementor-button:hover .elementor-button-text {
+      color: #FFFFFF !important;
+    }
+
+    /* Key Modules Redesign */
+    .sm-module-card {
+      display: flex;
+      flex-direction: column;
+      height: 350px;
+      margin: 10px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      background-color: var(--e-global-color-primary);
+    }
+    .sm-module-card:hover {
+      transform: translateY(-5px);
+    }
+    .sm-module-top {
+      height: 40%;
+      background-color: #B01615; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      text-align: center;
+      transition: background-color 0.3s ease;
+    }
+    .sm-module-top h3 {
+      color: #fff;
+      margin: 0;
+      font-size: 1.25rem;
+      font-family: var(--e-global-typography-c56636d-font-family, "Clash Display"), sans-serif;
+      font-weight: 500;
+      line-height: 1.3;
+    }
+    .sm-module-bottom {
+      height: 60%;
+      background-size: cover;
+      background-position: center;
+    }
   </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/v4-shims.min.css"><style is:inline>@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap");@font-face {font-family: "eicons";src: url("https://unpkg.com/elementor@3.21.6/assets/lib/eicons/fonts/eicons.woff2") format("woff2");font-weight: 400;font-style: normal;}@font-face {font-family: "jkiticon";src: url("https://raw.githubusercontent.com/jegtheme/jeg-elementor-kit/master/assets/fonts/jkiticon.woff") format("woff");}</style>
 </head>
@@ -175,15 +234,15 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-213a7af7 elementor-widget elementor-widget-text-editor animated fadeIn" data-id="213a7af7" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-									<p>Designing future</p>								</div>
+									<p>Become a certified fashion stylist in 12 weeks | Live Online classes | Government-recognized certificate</p>								</div>
 				</div>
 				<div class="elementor-element elementor-element-711544bb elementor-widget elementor-widget-heading animated fadeIn" data-id="711544bb" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-					<h1 class="elementor-heading-title elementor-size-default">Learn the Mantra of Styling. Build the career you were meant for!</h1>				</div>
+					<h1 class="elementor-heading-title elementor-size-default">Build Your Identity Through Style</h1>				</div>
 				</div>
 				<div class="elementor-element elementor-element-7cc6a488 elementor-widget elementor-widget-text-editor animated fadeIn" data-id="7cc6a488" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:400}" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-									<p>Learn fashion styling through accessible, affordable courses and turn your passion into a thriving career.</p>								</div>
+									<p>A modern styling program that combines creative skills with AI tools — helping you step into the industry with confidence.</p>								</div>
 				</div>
 				<div class="elementor-element elementor-element-2cdc2829 elementor-widget__width-auto elementor-widget elementor-widget-button animated fadeIn" data-id="2cdc2829" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:600}" data-widget_type="button.default">
 				<div class="elementor-widget-container">
@@ -225,14 +284,15 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 				</div>
 				<div class="elementor-element elementor-element-28299b4b  elementor-widget elementor-widget-text-editor" data-id="28299b4b" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:400}" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-									<p>At Style Mantra, we believe fashion is for everyone. Our mission is to make fashion styling education accessible and affordable, empowering aspiring designers to turn creativity into a career. With expert-led courses and hands-on workshops, we’re here to shape the next wave of fashion innovators.</p>								</div>
+									<p>At Style Mantra, we believe style is not about designing clothes — it’s about understanding yourself and expressing it with confidence.<br>Our mission is to make fashion styling simple, accessible, and achievable for every individual who wants to build their own identity.</p>
+									<p>Whether you’re starting fresh, restarting your career or turning your passion into a profession, our expert-led courses and hands-on guidance help you step into the world of styling with clarity and confidence.</p>								</div>
 				</div>
 				<div class="elementor-element elementor-element-91352dd elementor-widget__width-auto  elementor-widget elementor-widget-button" data-id="91352dd" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:600}" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 									<div class="elementor-button-wrapper">
 					<a class="elementor-button elementor-button-link elementor-size-sm" href="/contact">
 						<span class="elementor-button-content-wrapper">
-									<span class="elementor-button-text">Get Started</span>
+									<span class="elementor-button-text">Talk to a Styling Expert</span>
 					</span>
 					</a>
 				</div>
@@ -244,11 +304,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-358e5eb6 elementor-widget elementor-widget-elementskit-video" data-id="358e5eb6" data-element_type="widget" data-widget_type="elementskit-video.default">
 				<div class="elementor-widget-container">
-					<div class="ekit-wid-con">		<div class="video-content" data-video-player="[]" data-video-setting="{&quot;videoVolume&quot;:&quot;horizontal&quot;,&quot;startVolume&quot;:0.8,&quot;videoType&quot;:&quot;iframe&quot;,&quot;videoClass&quot;:&quot;mfp-fade&quot;}">
-			
-<a class="ekit_icon_button ekit-video-popup ekit-video-popup-btn" href="https://www.youtube.com/embed/VhBl3dHT5SY?feature=oembed?playlist=VhBl3dHT5SY&amp;mute=0&amp;autoplay=0&amp;loop=no&amp;controls=0&amp;start=0&amp;end=" aria-label="video-popup">
-				<i aria-hidden="true" class="icon icon-play-button"></i>		</a>
-					</div>
+					<div class="ekit-wid-con">		<div class="video-content" style="opacity: 0;"></div>
 		</div>				</div>
 				</div>
 					</div>
@@ -261,7 +317,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-5cd47ece elementor-widget elementor-widget-text-editor" data-id="5cd47ece" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-									<p><span style="font-weight: 400;">Years of experience</span></p>								</div>
+									<p><span style="font-weight: 400;">Years of experience*</span></p>								</div>
 				</div>
 				<div class="elementor-element elementor-element-2adb41b1 elementor-widget__width-auto elementor-widget elementor-widget-counter" data-id="2adb41b1" data-element_type="widget" data-widget_type="counter.default">
 				<div class="elementor-widget-container">
@@ -280,7 +336,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-ffee1d8 elementor-widget elementor-widget-text-editor" data-id="ffee1d8" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-									<p>Employment Generated</p>								</div>
+									<p>Employment Generated*</p>								</div>
 				</div>
 				<div class="elementor-element elementor-element-2cac6933 elementor-widget__width-auto elementor-widget elementor-widget-counter" data-id="2cac6933" data-element_type="widget" data-widget_type="counter.default">
 				<div class="elementor-widget-container">
@@ -299,7 +355,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-ced5157 elementor-widget-tablet__width-initial elementor-widget elementor-widget-text-editor" data-id="ced5157" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-									<p>Students Trained</p>								</div>
+									<p>Students Trained*</p>								</div>
 				</div>
 				<div class="elementor-element elementor-element-fae5111 elementor-widget__width-auto elementor-widget elementor-widget-counter" data-id="fae5111" data-element_type="widget" data-widget_type="counter.default">
 				<div class="elementor-widget-container">
@@ -318,7 +374,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-46e55bda elementor-widget elementor-widget-text-editor" data-id="46e55bda" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-									<p>Students Placement</p>								</div>
+									<p>Students Placement*</p>								</div>
 				</div>
 				<div class="elementor-element elementor-element-14a74f3a elementor-widget__width-auto elementor-widget elementor-widget-counter" data-id="14a74f3a" data-element_type="widget" data-widget_type="counter.default">
 				<div class="elementor-widget-container">
@@ -334,6 +390,17 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 					</div>
 		</div>
 					</div>
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-column elementor-col-100 elementor-top-column" data-element_type="column">
+								<div class="elementor-widget-wrap elementor-element-populated">
+									<div class="elementor-element elementor-widget elementor-widget-text-editor" data-element_type="widget" data-widget_type="text-editor.default">
+										<div class="elementor-widget-container" style="text-align: right; font-size: 14px; font-style: italic; color: #777; width: 100%; padding-top: 10px; padding-right: 20px;">
+											<p>*backed by our parent company Legacy Skill Mantra.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 		</section>
 				<section class="elementor-section elementor-top-section elementor-element elementor-element-9db2322 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="9db2322" data-element_type="section" id="info" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
 						<div class="elementor-container elementor-column-gap-default">
@@ -360,7 +427,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 				</div>
 				<div class="elementor-element elementor-element-0c17215  elementor-widget elementor-widget-text-editor" data-id="0c17215" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:400}" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-									<p>This program is designed to take students from foundational styling concepts to advanced industry techniques. Throughout the 12 weeks, students will engage in interactive learning experiences that include hands-on assignments, real world case studies, mood boarding and portfolio development.</p>								</div>
+									<p>A thoughtfully designed program that takes you from the foundations of styling to industry-ready techniques.<br>Over 12 weeks, you’ll gain hands-on experience, build your portfolio, and learn how to use AI tools to present, market, and position yourself, so you can confidently step into styling and start your income journey.</p>								</div>
 				</div>
 				<div class="elementor-element elementor-element-cfeb81b  elementor-widget elementor-widget-heading" data-id="cfeb81b" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
@@ -368,7 +435,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 				</div>
 				<div class="elementor-element elementor-element-acb24cc  elementor-widget elementor-widget-text-editor" data-id="acb24cc" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:400}" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-									<p>The course is structured to accommodate various learning paces, allowing students to balance their education with other commitments. Live sessions provide real-time engagement, while recorded lessons ensure accessibility at any time.</p>								</div>
+									<p>Designed to fit into your schedule, the course lets you learn at your own pace while balancing your other commitments.<br>With live sessions for real-time interaction and recorded lessons you can revisit anytime, you stay in control of how and when you learn.</p>								</div>
 				</div>
 				<div class="elementor-element elementor-element-3c06c1b elementor-widget__width-auto  elementor-widget elementor-widget-button" data-id="3c06c1b" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:600}" data-widget_type="button.default">
 				<div class="elementor-widget-container">
@@ -397,376 +464,118 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 				<div class="elementor-widget-container">
 					<h2 class="elementor-heading-title elementor-size-default">Discover the Key Modules of Fashion Mastery</h2>				</div>
 				</div>
-				<section class="elementor-section elementor-inner-section elementor-element elementor-element-77107ac5 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="77107ac5" data-element_type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+								<section class="elementor-section elementor-inner-section elementor-element elementor-element-77107ac5 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="77107ac5" data-element_type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
 						<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-35d7fd07 " data-id="35d7fd07" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:400}">
-			<div class="elementor-widget-wrap elementor-element-populated">
-					<div class="elementor-background-overlay"></div>
-						<div class="elementor-element elementor-element-31401534 elementor-widget elementor-widget-spacer" data-id="31401534" data-element_type="widget" data-widget_type="spacer.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-spacer">
-			<div class="elementor-spacer-inner"></div>
-		</div>
+			<div class="sm-module-card">
+        <div class="sm-module-top">
+            <h3>Introduction to Fashion Styling</h3>
+        </div>
+        <div class="sm-module-bottom" style="background-image: url('/images/fashion-designer-working-on-a-digital-tablet-NQJTY7M.jpg');"></div>
+    </div>
+</div>
+					<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-3366171e " data-id="3366171e" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:500}">
+			<div class="sm-module-card">
+        <div class="sm-module-top">
+            <h3>Elements and principles of styling</h3>
+        </div>
+        <div class="sm-module-bottom" style="background-image: url('/images/1-12.webp');"></div>
+    </div>
+</div>
+					<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-4bdb014 " data-id="4bdb014" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:500}">
+			<div class="sm-module-card">
+        <div class="sm-module-top">
+            <h3>Understanding body shapes</h3>
+        </div>
+        <div class="sm-module-bottom" style="background-image: url('/images/2-12.webp');"></div>
+    </div>
+</div>
+					<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-40c02a84 " data-id="40c02a84" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:600}">
+			<div class="sm-module-card">
+        <div class="sm-module-top">
+            <h3>Moodboarding and styling concepts</h3>
+        </div>
+        <div class="sm-module-bottom" style="background-image: url('/images/4-8.webp');"></div>
+    </div>
+</div>
 						</div>
-				</div>
-				<div class="elementor-element elementor-element-534ffcd3 elementor-widget elementor-widget-icon-box" data-id="534ffcd3" data-element_type="widget" data-widget_type="icon-box.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-icon-box-wrapper">
-
-			
-						<div class="elementor-icon-box-content">
-
-									<h3 class="elementor-icon-box-title">
-						<a href="/#">
-							Introduction to Fashion Styling						</a>
-					</h3>
-				
-				
-			</div>
-			
-		</div>
-						</div>
-				</div>
-				<div class="elementor-element elementor-element-59bcca7 elementor-widget__width-auto  elementor-widget elementor-widget-button" data-id="59bcca7" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:600}" data-widget_type="button.default">
-				<div class="elementor-widget-container">
-									<div class="elementor-button-wrapper">
-					<a class="elementor-button elementor-button-link elementor-size-sm" href="/contact">
-						<span class="elementor-button-content-wrapper">
-									<span class="elementor-button-text">Get Started</span>
-					</span>
-					</a>
-				</div>
-								</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-3366171e " data-id="3366171e" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:500}">
-			<div class="elementor-widget-wrap elementor-element-populated">
-					<div class="elementor-background-overlay"></div>
-						<div class="elementor-element elementor-element-7b117df2 elementor-widget elementor-widget-spacer" data-id="7b117df2" data-element_type="widget" data-widget_type="spacer.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-spacer">
-			<div class="elementor-spacer-inner"></div>
-		</div>
-						</div>
-				</div>
-				<div class="elementor-element elementor-element-7752843f elementor-widget elementor-widget-icon-box" data-id="7752843f" data-element_type="widget" data-widget_type="icon-box.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-icon-box-wrapper">
-
-			
-						<div class="elementor-icon-box-content">
-
-									<h3 class="elementor-icon-box-title">
-						<a href="/#">
-							Elements and principles of styling						</a>
-					</h3>
-				
-				
-			</div>
-			
-		</div>
-						</div>
-				</div>
-				<div class="elementor-element elementor-element-925e0e4 elementor-widget__width-auto  elementor-widget elementor-widget-button" data-id="925e0e4" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:600}" data-widget_type="button.default">
-				<div class="elementor-widget-container">
-									<div class="elementor-button-wrapper">
-					<a class="elementor-button elementor-button-link elementor-size-sm" href="/contact">
-						<span class="elementor-button-content-wrapper">
-									<span class="elementor-button-text">Get Started</span>
-					</span>
-					</a>
-				</div>
-								</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-4bdb014 " data-id="4bdb014" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:500}">
-			<div class="elementor-widget-wrap elementor-element-populated">
-					<div class="elementor-background-overlay"></div>
-						<div class="elementor-element elementor-element-a5bced9 elementor-widget elementor-widget-spacer" data-id="a5bced9" data-element_type="widget" data-widget_type="spacer.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-spacer">
-			<div class="elementor-spacer-inner"></div>
-		</div>
-						</div>
-				</div>
-				<div class="elementor-element elementor-element-ca64e24 elementor-widget elementor-widget-icon-box" data-id="ca64e24" data-element_type="widget" data-widget_type="icon-box.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-icon-box-wrapper">
-
-			
-						<div class="elementor-icon-box-content">
-
-									<h3 class="elementor-icon-box-title">
-						<a href="/#">
-							Understanding body shapes 						</a>
-					</h3>
-				
-				
-			</div>
-			
-		</div>
-						</div>
-				</div>
-				<div class="elementor-element elementor-element-7753a95 elementor-widget__width-auto  elementor-widget elementor-widget-button" data-id="7753a95" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:600}" data-widget_type="button.default">
-				<div class="elementor-widget-container">
-									<div class="elementor-button-wrapper">
-					<a class="elementor-button elementor-button-link elementor-size-sm" href="/contact">
-						<span class="elementor-button-content-wrapper">
-									<span class="elementor-button-text">Get Started</span>
-					</span>
-					</a>
-				</div>
-								</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-40c02a84 " data-id="40c02a84" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:600}">
-			<div class="elementor-widget-wrap elementor-element-populated">
-					<div class="elementor-background-overlay"></div>
-						<div class="elementor-element elementor-element-3160d807 elementor-widget elementor-widget-spacer" data-id="3160d807" data-element_type="widget" data-widget_type="spacer.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-spacer">
-			<div class="elementor-spacer-inner"></div>
-		</div>
-						</div>
-				</div>
-				<div class="elementor-element elementor-element-8eff0b6 elementor-widget elementor-widget-icon-box" data-id="8eff0b6" data-element_type="widget" data-widget_type="icon-box.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-icon-box-wrapper">
-
-			
-						<div class="elementor-icon-box-content">
-
-									<h3 class="elementor-icon-box-title">
-						<a href="/#">
-							Moodboarding and styling concepts 						</a>
-					</h3>
-				
-				
-			</div>
-			
-		</div>
-						</div>
-				</div>
-				<div class="elementor-element elementor-element-cb60dc3 elementor-widget__width-auto  elementor-widget elementor-widget-button" data-id="cb60dc3" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:600}" data-widget_type="button.default">
-				<div class="elementor-widget-container">
-									<div class="elementor-button-wrapper">
-					<a class="elementor-button elementor-button-link elementor-size-sm" href="/contact">
-						<span class="elementor-button-content-wrapper">
-									<span class="elementor-button-text">Get Started</span>
-					</span>
-					</a>
-				</div>
-								</div>
-				</div>
-					</div>
-		</div>
-					</div>
-		</section>
+				</section>
 				<section class="elementor-section elementor-inner-section elementor-element elementor-element-593ee4a7 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="593ee4a7" data-element_type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
 						<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-7951e42c " data-id="7951e42c" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:400}">
-			<div class="elementor-widget-wrap elementor-element-populated">
-					<div class="elementor-background-overlay"></div>
-						<div class="elementor-element elementor-element-5a7d1838 elementor-widget elementor-widget-spacer" data-id="5a7d1838" data-element_type="widget" data-widget_type="spacer.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-spacer">
-			<div class="elementor-spacer-inner"></div>
-		</div>
+			<div class="sm-module-card">
+        <div class="sm-module-top">
+            <h3>Color theory in fashion styling</h3>
+        </div>
+        <div class="sm-module-bottom" style="background-image: url('/images/5-6.webp');"></div>
+    </div>
+</div>
+					<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-4787a859 " data-id="4787a859" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:500}">
+			<div class="sm-module-card">
+        <div class="sm-module-top">
+            <h3>Wardrobe planning & capsule wardrobes</h3>
+        </div>
+        <div class="sm-module-bottom" style="background-image: url('/images/6-5.webp');"></div>
+    </div>
+</div>
+					<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-b530c78 " data-id="b530c78" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:500}">
+			<div class="sm-module-card">
+        <div class="sm-module-top">
+            <h3>Styling for Different Occasions</h3>
+        </div>
+        <div class="sm-module-bottom" style="background-image: url('/images/Style-mantra-home-page-modules.webp');"></div>
+    </div>
+</div>
+					<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-64b522e1 " data-id="64b522e1" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:600}">
+			<div class="sm-module-card">
+        <div class="sm-module-top">
+            <h3>Personal branding and client styling</h3>
+        </div>
+        <div class="sm-module-bottom" style="background-image: url('/images/7-2.webp');"></div>
+    </div>
+</div>
 						</div>
-				</div>
-				<div class="elementor-element elementor-element-69c1b53 elementor-widget elementor-widget-icon-box" data-id="69c1b53" data-element_type="widget" data-widget_type="icon-box.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-icon-box-wrapper">
-
-			
-						<div class="elementor-icon-box-content">
-
-									<h3 class="elementor-icon-box-title">
-						<a href="/#">
-							Color theory in fashion styling 						</a>
-					</h3>
-				
-				
-			</div>
-			
-		</div>
-						</div>
-				</div>
-				<div class="elementor-element elementor-element-a728383 elementor-widget__width-auto  elementor-widget elementor-widget-button" data-id="a728383" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:600}" data-widget_type="button.default">
-				<div class="elementor-widget-container">
-									<div class="elementor-button-wrapper">
-					<a class="elementor-button elementor-button-link elementor-size-sm" href="/contact">
-						<span class="elementor-button-content-wrapper">
-									<span class="elementor-button-text">Get Started</span>
-					</span>
-					</a>
-				</div>
-								</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-4787a859 " data-id="4787a859" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:500}">
-			<div class="elementor-widget-wrap elementor-element-populated">
-					<div class="elementor-background-overlay"></div>
-						<div class="elementor-element elementor-element-6d56adec elementor-widget elementor-widget-spacer" data-id="6d56adec" data-element_type="widget" data-widget_type="spacer.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-spacer">
-			<div class="elementor-spacer-inner"></div>
-		</div>
-						</div>
-				</div>
-				<div class="elementor-element elementor-element-1e391cdc elementor-widget__width-initial elementor-widget elementor-widget-icon-box" data-id="1e391cdc" data-element_type="widget" data-widget_type="icon-box.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-icon-box-wrapper">
-
-			
-						<div class="elementor-icon-box-content">
-
-									<h3 class="elementor-icon-box-title">
-						<a href="/#">
-							Wardrobe planning &amp; capsule wardrobes						</a>
-					</h3>
-				
-				
-			</div>
-			
-		</div>
-						</div>
-				</div>
-				<div class="elementor-element elementor-element-ce23c81 elementor-widget__width-auto  elementor-widget elementor-widget-button" data-id="ce23c81" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:600}" data-widget_type="button.default">
-				<div class="elementor-widget-container">
-									<div class="elementor-button-wrapper">
-					<a class="elementor-button elementor-button-link elementor-size-sm" href="/contact">
-						<span class="elementor-button-content-wrapper">
-									<span class="elementor-button-text">Get Started</span>
-					</span>
-					</a>
-				</div>
-								</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-b530c78 " data-id="b530c78" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:500}">
-			<div class="elementor-widget-wrap elementor-element-populated">
-					<div class="elementor-background-overlay"></div>
-						<div class="elementor-element elementor-element-d49e3db elementor-widget elementor-widget-spacer" data-id="d49e3db" data-element_type="widget" data-widget_type="spacer.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-spacer">
-			<div class="elementor-spacer-inner"></div>
-		</div>
-						</div>
-				</div>
-				<div class="elementor-element elementor-element-0ff9dad elementor-widget elementor-widget-icon-box" data-id="0ff9dad" data-element_type="widget" data-widget_type="icon-box.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-icon-box-wrapper">
-
-			
-						<div class="elementor-icon-box-content">
-
-									<h3 class="elementor-icon-box-title">
-						<a href="/#">
-							Styling for Different Occasions						</a>
-					</h3>
-				
-				
-			</div>
-			
-		</div>
-						</div>
-				</div>
-				<div class="elementor-element elementor-element-1db87d2 elementor-widget__width-auto  elementor-widget elementor-widget-button" data-id="1db87d2" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:600}" data-widget_type="button.default">
-				<div class="elementor-widget-container">
-									<div class="elementor-button-wrapper">
-					<a class="elementor-button elementor-button-link elementor-size-sm" href="/contact">
-						<span class="elementor-button-content-wrapper">
-									<span class="elementor-button-text">Get Started</span>
-					</span>
-					</a>
-				</div>
-								</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-64b522e1 " data-id="64b522e1" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:600}">
-			<div class="elementor-widget-wrap elementor-element-populated">
-					<div class="elementor-background-overlay"></div>
-						<div class="elementor-element elementor-element-336caf5 elementor-widget elementor-widget-spacer" data-id="336caf5" data-element_type="widget" data-widget_type="spacer.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-spacer">
-			<div class="elementor-spacer-inner"></div>
-		</div>
-						</div>
-				</div>
-				<div class="elementor-element elementor-element-55c33214 elementor-widget elementor-widget-icon-box" data-id="55c33214" data-element_type="widget" data-widget_type="icon-box.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-icon-box-wrapper">
-
-			
-						<div class="elementor-icon-box-content">
-
-									<h3 class="elementor-icon-box-title">
-						<a href="/#">
-							Personal branding and client styling						</a>
-					</h3>
-				
-				
-			</div>
-			
-		</div>
-						</div>
-				</div>
-				<div class="elementor-element elementor-element-e8bca96 elementor-widget__width-auto  elementor-widget elementor-widget-button" data-id="e8bca96" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:600}" data-widget_type="button.default">
-				<div class="elementor-widget-container">
-									<div class="elementor-button-wrapper">
-					<a class="elementor-button elementor-button-link elementor-size-sm" href="/contact">
-						<span class="elementor-button-content-wrapper">
-									<span class="elementor-button-text">Get Started</span>
-					</span>
-					</a>
-				</div>
-								</div>
-				</div>
-					</div>
-		</div>
-					</div>
-		</section>
+				</section>
 				<section class="elementor-section elementor-inner-section elementor-element elementor-element-06941cf elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="06941cf" data-element_type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
 						<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-2d9ec4b " data-id="2d9ec4b" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:400}">
-			<div class="elementor-widget-wrap elementor-element-populated">
-					<div class="elementor-background-overlay"></div>
-						<div class="elementor-element elementor-element-be767d2 elementor-widget elementor-widget-spacer" data-id="be767d2" data-element_type="widget" data-widget_type="spacer.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-spacer">
-			<div class="elementor-spacer-inner"></div>
-		</div>
+			<div class="sm-module-card">
+        <div class="sm-module-top">
+            <h3>Fashion Photography</h3>
+        </div>
+        <div class="sm-module-bottom" style="background-image: url('/images/3-10.webp');"></div>
+    </div>
+</div>
+					<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-937085e " data-id="937085e" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:500}">
+			<div class="sm-module-card">
+        <div class="sm-module-top">
+            <h3>Basic makeup and grooming</h3>
+        </div>
+        <div class="sm-module-bottom" style="background-image: url('/images/8-2.webp');"></div>
+    </div>
+</div>
+					<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-f47eb37 " data-id="f47eb37" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:500}">
+			<div class="sm-module-card">
+        <div class="sm-module-top">
+            <h3>Practical styling projects</h3>
+        </div>
+        <div class="sm-module-bottom" style="background-image: url('/images/2-12.webp');"></div>
+    </div>
+</div>
+					<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-3f8466a " data-id="3f8466a" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:500}">
+			<div class="sm-module-card">
+        <div class="sm-module-top">
+            <h3>Portfolio development and career growth</h3>
+        </div>
+        <div class="sm-module-bottom" style="background-image: url('/images/9-2.webp');"></div>
+    </div>
+</div>
 						</div>
-				</div>
-				<div class="elementor-element elementor-element-df20189 elementor-widget elementor-widget-icon-box" data-id="df20189" data-element_type="widget" data-widget_type="icon-box.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-icon-box-wrapper">
-
-			
-						<div class="elementor-icon-box-content">
-
-									<h3 class="elementor-icon-box-title">
-						<a href="/#">
-							Fashion Photography 						</a>
-					</h3>
-				
-				
-			</div>
-			
-		</div>
-						</div>
-				</div>
-				<div class="elementor-element elementor-element-761a226 elementor-widget__width-auto  elementor-widget elementor-widget-button" data-id="761a226" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:600}" data-widget_type="button.default">
-				<div class="elementor-widget-container">
+				</section>
+				<div class="elementor-element elementor-element-cta-module elementor-widget__width-auto elementor-widget elementor-widget-button animated fadeIn" data-id="cta-module" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:600}" data-widget_type="button.default">
+				<div class="elementor-widget-container" style="text-align: center; margin-top: 40px;">
 									<div class="elementor-button-wrapper">
-					<a class="elementor-button elementor-button-link elementor-size-sm" href="/contact">
+					<a class="elementor-button elementor-button-link elementor-size-md" href="/contact">
 						<span class="elementor-button-content-wrapper">
 									<span class="elementor-button-text">Get Started</span>
 					</span>
@@ -776,136 +585,9 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 				</div>
 					</div>
 		</div>
-				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-937085e " data-id="937085e" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:500}">
-			<div class="elementor-widget-wrap elementor-element-populated">
-					<div class="elementor-background-overlay"></div>
-						<div class="elementor-element elementor-element-89c18f8 elementor-widget elementor-widget-spacer" data-id="89c18f8" data-element_type="widget" data-widget_type="spacer.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-spacer">
-			<div class="elementor-spacer-inner"></div>
-		</div>
 						</div>
-				</div>
-				<div class="elementor-element elementor-element-c39517b elementor-widget elementor-widget-icon-box" data-id="c39517b" data-element_type="widget" data-widget_type="icon-box.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-icon-box-wrapper">
-
-			
-						<div class="elementor-icon-box-content">
-
-									<h3 class="elementor-icon-box-title">
-						<a href="/#">
-							Basic makeup and grooming 						</a>
-					</h3>
-				
-				
-			</div>
-			
-		</div>
-						</div>
-				</div>
-				<div class="elementor-element elementor-element-4ee01ce elementor-widget__width-auto  elementor-widget elementor-widget-button" data-id="4ee01ce" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:600}" data-widget_type="button.default">
-				<div class="elementor-widget-container">
-									<div class="elementor-button-wrapper">
-					<a class="elementor-button elementor-button-link elementor-size-sm" href="/contact">
-						<span class="elementor-button-content-wrapper">
-									<span class="elementor-button-text">Get Started</span>
-					</span>
-					</a>
-				</div>
-								</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-f47eb37 " data-id="f47eb37" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:500}">
-			<div class="elementor-widget-wrap elementor-element-populated">
-					<div class="elementor-background-overlay"></div>
-						<div class="elementor-element elementor-element-24ea762 elementor-widget elementor-widget-spacer" data-id="24ea762" data-element_type="widget" data-widget_type="spacer.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-spacer">
-			<div class="elementor-spacer-inner"></div>
-		</div>
-						</div>
-				</div>
-				<div class="elementor-element elementor-element-a6b7a2e elementor-widget elementor-widget-icon-box" data-id="a6b7a2e" data-element_type="widget" data-widget_type="icon-box.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-icon-box-wrapper">
-
-			
-						<div class="elementor-icon-box-content">
-
-									<h3 class="elementor-icon-box-title">
-						<a href="/#">
-							Practical styling projects 						</a>
-					</h3>
-				
-				
-			</div>
-			
-		</div>
-						</div>
-				</div>
-				<div class="elementor-element elementor-element-1d920da elementor-widget__width-auto  elementor-widget elementor-widget-button" data-id="1d920da" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:600}" data-widget_type="button.default">
-				<div class="elementor-widget-container">
-									<div class="elementor-button-wrapper">
-					<a class="elementor-button elementor-button-link elementor-size-sm" href="/contact">
-						<span class="elementor-button-content-wrapper">
-									<span class="elementor-button-text">Get Started</span>
-					</span>
-					</a>
-				</div>
-								</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-3f8466a " data-id="3f8466a" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:500}">
-			<div class="elementor-widget-wrap elementor-element-populated">
-					<div class="elementor-background-overlay"></div>
-						<div class="elementor-element elementor-element-d21d241 elementor-widget elementor-widget-spacer" data-id="d21d241" data-element_type="widget" data-widget_type="spacer.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-spacer">
-			<div class="elementor-spacer-inner"></div>
-		</div>
-						</div>
-				</div>
-				<div class="elementor-element elementor-element-dd0bea6 elementor-widget elementor-widget-icon-box" data-id="dd0bea6" data-element_type="widget" data-widget_type="icon-box.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-icon-box-wrapper">
-
-			
-						<div class="elementor-icon-box-content">
-
-									<h3 class="elementor-icon-box-title">
-						<a href="/#">
-							Portfolio development and&nbsp;career&nbsp;growth						</a>
-					</h3>
-				
-				
-			</div>
-			
-		</div>
-						</div>
-				</div>
-				<div class="elementor-element elementor-element-2860764 elementor-widget__width-auto  elementor-widget elementor-widget-button" data-id="2860764" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:600}" data-widget_type="button.default">
-				<div class="elementor-widget-container">
-									<div class="elementor-button-wrapper">
-					<a class="elementor-button elementor-button-link elementor-size-sm" href="/contact">
-						<span class="elementor-button-content-wrapper">
-									<span class="elementor-button-text">Get Started</span>
-					</span>
-					</a>
-				</div>
-								</div>
-				</div>
-					</div>
-		</div>
-					</div>
-		</section>
-					</div>
-		</div>
-					</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-1f295b2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1f295b2" data-element_type="section" id="testimonial" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;jet_parallax_layout_list&quot;:[]}">
+			</section>
+<section class="elementor-section elementor-top-section elementor-element elementor-element-1f295b2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1f295b2" data-element_type="section" id="testimonial" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;jet_parallax_layout_list&quot;:[]}">
 							<div class="elementor-background-overlay"></div>
 							<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-0f00d02" data-id="0f00d02" data-element_type="column">
@@ -1079,331 +761,17 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 		</div>
 					</div>
 		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-4ea90d2 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4ea90d2" data-element_type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-fb18543" data-id="fb18543" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-8f155a7  elementor-widget elementor-widget-text-editor" data-id="8f155a7" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-									<p>Career</p>								</div>
-				</div>
-				<div class="elementor-element elementor-element-f701110  elementor-widget elementor-widget-heading" data-id="f701110" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default">Careers you can choose </h2>				</div>
-				</div>
-				<section class="elementor-section elementor-inner-section elementor-element elementor-element-2daef8a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2daef8a" data-element_type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-5504cd1 " data-id="5504cd1" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:400}">
-			<div class="elementor-widget-wrap elementor-element-populated">
-					<div class="elementor-background-overlay"></div>
-						<div class="elementor-element elementor-element-677091a elementor-widget elementor-widget-spacer" data-id="677091a" data-element_type="widget" data-widget_type="spacer.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-spacer">
-			<div class="elementor-spacer-inner"></div>
-		</div>
-						</div>
-				</div>
-				<div class="elementor-element elementor-element-2051da3 elementor-widget elementor-widget-icon-box" data-id="2051da3" data-element_type="widget" data-widget_type="icon-box.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-icon-box-wrapper">
-
-			
-						<div class="elementor-icon-box-content">
-
-									<h3 class="elementor-icon-box-title">
-						<a href="/#">
-							Become a Professional Fashion Stylist						</a>
-					</h3>
-				
-				
-			</div>
-			
-		</div>
-						</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-0811d89 " data-id="0811d89" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:500}">
-			<div class="elementor-widget-wrap elementor-element-populated">
-					<div class="elementor-background-overlay"></div>
-						<div class="elementor-element elementor-element-fd2435a elementor-widget elementor-widget-spacer" data-id="fd2435a" data-element_type="widget" data-widget_type="spacer.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-spacer">
-			<div class="elementor-spacer-inner"></div>
-		</div>
-						</div>
-				</div>
-				<div class="elementor-element elementor-element-9da3e6d elementor-widget elementor-widget-icon-box" data-id="9da3e6d" data-element_type="widget" data-widget_type="icon-box.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-icon-box-wrapper">
-
-			
-						<div class="elementor-icon-box-content">
-
-									<h3 class="elementor-icon-box-title">
-						<a href="/#">
-							Become an Art Director						</a>
-					</h3>
-				
-				
-			</div>
-			
-		</div>
-						</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-5d244a7 " data-id="5d244a7" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:500}">
-			<div class="elementor-widget-wrap elementor-element-populated">
-					<div class="elementor-background-overlay"></div>
-						<div class="elementor-element elementor-element-d2d4a22 elementor-widget elementor-widget-spacer" data-id="d2d4a22" data-element_type="widget" data-widget_type="spacer.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-spacer">
-			<div class="elementor-spacer-inner"></div>
-		</div>
-						</div>
-				</div>
-				<div class="elementor-element elementor-element-db7ad8a elementor-widget elementor-widget-icon-box" data-id="db7ad8a" data-element_type="widget" data-widget_type="icon-box.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-icon-box-wrapper">
-
-			
-						<div class="elementor-icon-box-content">
-
-									<h3 class="elementor-icon-box-title">
-						<a href="/#">
-							Become a Celebrity Stylist						</a>
-					</h3>
-				
-				
-			</div>
-			
-		</div>
-						</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-cf5a678 " data-id="cf5a678" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:500}">
-			<div class="elementor-widget-wrap elementor-element-populated">
-					<div class="elementor-background-overlay"></div>
-						<div class="elementor-element elementor-element-6c8896f elementor-widget elementor-widget-spacer" data-id="6c8896f" data-element_type="widget" data-widget_type="spacer.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-spacer">
-			<div class="elementor-spacer-inner"></div>
-		</div>
-						</div>
-				</div>
-				<div class="elementor-element elementor-element-592debf elementor-widget elementor-widget-icon-box" data-id="592debf" data-element_type="widget" data-widget_type="icon-box.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-icon-box-wrapper">
-
-			
-						<div class="elementor-icon-box-content">
-
-									<h3 class="elementor-icon-box-title">
-						<a href="/#">
-							Work in Advertising &amp; Brand Styling						</a>
-					</h3>
-				
-				
-			</div>
-			
-		</div>
-						</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-2692c22 " data-id="2692c22" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:600}">
-			<div class="elementor-widget-wrap elementor-element-populated">
-					<div class="elementor-background-overlay"></div>
-						<div class="elementor-element elementor-element-a64de1b elementor-widget elementor-widget-spacer" data-id="a64de1b" data-element_type="widget" data-widget_type="spacer.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-spacer">
-			<div class="elementor-spacer-inner"></div>
-		</div>
-						</div>
-				</div>
-				<div class="elementor-element elementor-element-2f02f95 elementor-widget elementor-widget-icon-box" data-id="2f02f95" data-element_type="widget" data-widget_type="icon-box.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-icon-box-wrapper">
-
-			
-						<div class="elementor-icon-box-content">
-
-									<h3 class="elementor-icon-box-title">
-						<a href="/#">
-							Work in Commercial Styling						</a>
-					</h3>
-				
-				
-			</div>
-			
-		</div>
-						</div>
-				</div>
-					</div>
-		</div>
-					</div>
-		</section>
-				<section class="elementor-section elementor-inner-section elementor-element elementor-element-a7803e5 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a7803e5" data-element_type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-c04ee69 " data-id="c04ee69" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:400}">
-			<div class="elementor-widget-wrap elementor-element-populated">
-					<div class="elementor-background-overlay"></div>
-						<div class="elementor-element elementor-element-1c3936f elementor-widget elementor-widget-spacer" data-id="1c3936f" data-element_type="widget" data-widget_type="spacer.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-spacer">
-			<div class="elementor-spacer-inner"></div>
-		</div>
-						</div>
-				</div>
-				<div class="elementor-element elementor-element-c151f63 elementor-widget elementor-widget-icon-box" data-id="c151f63" data-element_type="widget" data-widget_type="icon-box.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-icon-box-wrapper">
-
-			
-						<div class="elementor-icon-box-content">
-
-									<h3 class="elementor-icon-box-title">
-						<a href="/#">
-							Work in E-commerce Styling						</a>
-					</h3>
-				
-				
-			</div>
-			
-		</div>
-						</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-6820976 " data-id="6820976" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:500}">
-			<div class="elementor-widget-wrap elementor-element-populated">
-					<div class="elementor-background-overlay"></div>
-						<div class="elementor-element elementor-element-ced5aac elementor-widget elementor-widget-spacer" data-id="ced5aac" data-element_type="widget" data-widget_type="spacer.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-spacer">
-			<div class="elementor-spacer-inner"></div>
-		</div>
-						</div>
-				</div>
-				<div class="elementor-element elementor-element-e81dc69 elementor-widget elementor-widget-icon-box" data-id="e81dc69" data-element_type="widget" data-widget_type="icon-box.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-icon-box-wrapper">
-
-			
-						<div class="elementor-icon-box-content">
-
-									<h3 class="elementor-icon-box-title">
-						<a href="/#">
-							Work in Editorial Fashion Styling						</a>
-					</h3>
-				
-				
-			</div>
-			
-		</div>
-						</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-fb50b3b " data-id="fb50b3b" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:500}">
-			<div class="elementor-widget-wrap elementor-element-populated">
-					<div class="elementor-background-overlay"></div>
-						<div class="elementor-element elementor-element-c5a1e1a elementor-widget elementor-widget-spacer" data-id="c5a1e1a" data-element_type="widget" data-widget_type="spacer.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-spacer">
-			<div class="elementor-spacer-inner"></div>
-		</div>
-						</div>
-				</div>
-				<div class="elementor-element elementor-element-bd10370 elementor-widget elementor-widget-icon-box" data-id="bd10370" data-element_type="widget" data-widget_type="icon-box.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-icon-box-wrapper">
-
-			
-						<div class="elementor-icon-box-content">
-
-									<h3 class="elementor-icon-box-title">
-						<a href="/#">
-							Secure Paid Work as a Fashion Writer &amp; Fashion Blogger						</a>
-					</h3>
-				
-				
-			</div>
-			
-		</div>
-						</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-7696bc1 " data-id="7696bc1" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:500}">
-			<div class="elementor-widget-wrap elementor-element-populated">
-					<div class="elementor-background-overlay"></div>
-						<div class="elementor-element elementor-element-8fbfa48 elementor-widget elementor-widget-spacer" data-id="8fbfa48" data-element_type="widget" data-widget_type="spacer.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-spacer">
-			<div class="elementor-spacer-inner"></div>
-		</div>
-						</div>
-				</div>
-				<div class="elementor-element elementor-element-8a4284e elementor-widget elementor-widget-icon-box" data-id="8a4284e" data-element_type="widget" data-widget_type="icon-box.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-icon-box-wrapper">
-
-			
-						<div class="elementor-icon-box-content">
-
-									<h3 class="elementor-icon-box-title">
-						<a href="/#">
-							Secure Projects in Runway Styling						</a>
-					</h3>
-				
-				
-			</div>
-			
-		</div>
-						</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-021ab40 " data-id="021ab40" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:600}">
-			<div class="elementor-widget-wrap elementor-element-populated">
-					<div class="elementor-background-overlay"></div>
-						<div class="elementor-element elementor-element-229c255 elementor-widget elementor-widget-spacer" data-id="229c255" data-element_type="widget" data-widget_type="spacer.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-spacer">
-			<div class="elementor-spacer-inner"></div>
-		</div>
-						</div>
-				</div>
-				<div class="elementor-element elementor-element-5fac46f elementor-widget elementor-widget-icon-box" data-id="5fac46f" data-element_type="widget" data-widget_type="icon-box.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-icon-box-wrapper">
-
-			
-						<div class="elementor-icon-box-content">
-
-									<h3 class="elementor-icon-box-title">
-						<a href="/#">
-							Secure Project in Shoot Production						</a>
-					</h3>
-				
-				
-			</div>
-			
-		</div>
-						</div>
-				</div>
-					</div>
-		</div>
-					</div>
-		</section>
-					</div>
-		</div>
-					</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-ef30a33 elementor-reverse-tablet elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ef30a33" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;jet_parallax_layout_list&quot;:[]}">
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4ea90d2 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4ea90d2" data-element_type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}" data-astro-cid-j7pv25f6> <div class="elementor-container elementor-column-gap-default" data-astro-cid-j7pv25f6> <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-fb18543" data-id="fb18543" data-element_type="column" data-astro-cid-j7pv25f6> <div class="elementor-widget-wrap elementor-element-populated" data-astro-cid-j7pv25f6> <div class="elementor-element elementor-element-8f155a7  elementor-widget elementor-widget-text-editor" data-id="8f155a7" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="text-editor.default" data-astro-cid-j7pv25f6> <div class="elementor-widget-container" data-astro-cid-j7pv25f6> <p data-astro-cid-j7pv25f6>Career</p> </div> </div> <div class="elementor-element elementor-element-f701110  elementor-widget elementor-widget-heading" data-id="f701110" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="heading.default" data-astro-cid-j7pv25f6> <div class="elementor-widget-container" data-astro-cid-j7pv25f6> <h2 class="elementor-heading-title elementor-size-default" data-astro-cid-j7pv25f6>Careers you can choose </h2> </div> </div> <section class="elementor-section elementor-inner-section elementor-element elementor-element-2daef8a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2daef8a" data-element_type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}" data-astro-cid-j7pv25f6> <div class="elementor-container elementor-column-gap-default" data-astro-cid-j7pv25f6> <div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-5504cd1 " data-id="5504cd1" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:400}" data-astro-cid-j7pv25f6> <div class="elementor-widget-wrap elementor-element-populated" data-astro-cid-j7pv25f6> <div class="elementor-background-overlay" data-astro-cid-j7pv25f6></div> <div class="elementor-element elementor-element-677091a elementor-widget elementor-widget-spacer" data-id="677091a" data-element_type="widget" data-widget_type="spacer.default" data-astro-cid-j7pv25f6> <div class="elementor-widget-container" data-astro-cid-j7pv25f6> <div class="elementor-spacer" data-astro-cid-j7pv25f6> <div class="elementor-spacer-inner" data-astro-cid-j7pv25f6></div> </div> </div> </div> <div class="elementor-element elementor-element-2051da3 elementor-widget elementor-widget-icon-box" data-id="2051da3" data-element_type="widget" data-widget_type="icon-box.default" data-astro-cid-j7pv25f6> <div class="elementor-widget-container" data-astro-cid-j7pv25f6> <div class="elementor-icon-box-wrapper" data-astro-cid-j7pv25f6> <div class="elementor-icon-box-content" data-astro-cid-j7pv25f6> <h3 class="elementor-icon-box-title" data-astro-cid-j7pv25f6> <a href="/#" data-astro-cid-j7pv25f6>
+Become a Professional Fashion Stylist </a> </h3> </div> </div> </div> </div> </div> </div> <div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-0811d89 " data-id="0811d89" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:500}" data-astro-cid-j7pv25f6> <div class="elementor-widget-wrap elementor-element-populated" data-astro-cid-j7pv25f6> <div class="elementor-background-overlay" data-astro-cid-j7pv25f6></div> <div class="elementor-element elementor-element-fd2435a elementor-widget elementor-widget-spacer" data-id="fd2435a" data-element_type="widget" data-widget_type="spacer.default" data-astro-cid-j7pv25f6> <div class="elementor-widget-container" data-astro-cid-j7pv25f6> <div class="elementor-spacer" data-astro-cid-j7pv25f6> <div class="elementor-spacer-inner" data-astro-cid-j7pv25f6></div> </div> </div> </div> <div class="elementor-element elementor-element-9da3e6d elementor-widget elementor-widget-icon-box" data-id="9da3e6d" data-element_type="widget" data-widget_type="icon-box.default" data-astro-cid-j7pv25f6> <div class="elementor-widget-container" data-astro-cid-j7pv25f6> <div class="elementor-icon-box-wrapper" data-astro-cid-j7pv25f6> <div class="elementor-icon-box-content" data-astro-cid-j7pv25f6> <h3 class="elementor-icon-box-title" data-astro-cid-j7pv25f6> <a href="/#" data-astro-cid-j7pv25f6>
+Become an Art Director </a> </h3> </div> </div> </div> </div> </div> </div> <div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-5d244a7 " data-id="5d244a7" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:500}" data-astro-cid-j7pv25f6> <div class="elementor-widget-wrap elementor-element-populated" data-astro-cid-j7pv25f6> <div class="elementor-background-overlay" data-astro-cid-j7pv25f6></div> <div class="elementor-element elementor-element-d2d4a22 elementor-widget elementor-widget-spacer" data-id="d2d4a22" data-element_type="widget" data-widget_type="spacer.default" data-astro-cid-j7pv25f6> <div class="elementor-widget-container" data-astro-cid-j7pv25f6> <div class="elementor-spacer" data-astro-cid-j7pv25f6> <div class="elementor-spacer-inner" data-astro-cid-j7pv25f6></div> </div> </div> </div> <div class="elementor-element elementor-element-db7ad8a elementor-widget elementor-widget-icon-box" data-id="db7ad8a" data-element_type="widget" data-widget_type="icon-box.default" data-astro-cid-j7pv25f6> <div class="elementor-widget-container" data-astro-cid-j7pv25f6> <div class="elementor-icon-box-wrapper" data-astro-cid-j7pv25f6> <div class="elementor-icon-box-content" data-astro-cid-j7pv25f6> <h3 class="elementor-icon-box-title" data-astro-cid-j7pv25f6> <a href="/#" data-astro-cid-j7pv25f6>
+Become a Celebrity Stylist </a> </h3> </div> </div> </div> </div> </div> </div> <div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-cf5a678 " data-id="cf5a678" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:500}" data-astro-cid-j7pv25f6> <div class="elementor-widget-wrap elementor-element-populated" data-astro-cid-j7pv25f6> <div class="elementor-background-overlay" data-astro-cid-j7pv25f6></div> <div class="elementor-element elementor-element-6c8896f elementor-widget elementor-widget-spacer" data-id="6c8896f" data-element_type="widget" data-widget_type="spacer.default" data-astro-cid-j7pv25f6> <div class="elementor-widget-container" data-astro-cid-j7pv25f6> <div class="elementor-spacer" data-astro-cid-j7pv25f6> <div class="elementor-spacer-inner" data-astro-cid-j7pv25f6></div> </div> </div> </div> <div class="elementor-element elementor-element-592debf elementor-widget elementor-widget-icon-box" data-id="592debf" data-element_type="widget" data-widget_type="icon-box.default" data-astro-cid-j7pv25f6> <div class="elementor-widget-container" data-astro-cid-j7pv25f6> <div class="elementor-icon-box-wrapper" data-astro-cid-j7pv25f6> <div class="elementor-icon-box-content" data-astro-cid-j7pv25f6> <h3 class="elementor-icon-box-title" data-astro-cid-j7pv25f6> <a href="/#" data-astro-cid-j7pv25f6>
+Work in Advertising &amp; Brand Styling </a> </h3> </div> </div> </div> </div> </div> </div> <div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-2692c22 " data-id="2692c22" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:600}" data-astro-cid-j7pv25f6> <div class="elementor-widget-wrap elementor-element-populated" data-astro-cid-j7pv25f6> <div class="elementor-background-overlay" data-astro-cid-j7pv25f6></div> <div class="elementor-element elementor-element-a64de1b elementor-widget elementor-widget-spacer" data-id="a64de1b" data-element_type="widget" data-widget_type="spacer.default" data-astro-cid-j7pv25f6> <div class="elementor-widget-container" data-astro-cid-j7pv25f6> <div class="elementor-spacer" data-astro-cid-j7pv25f6> <div class="elementor-spacer-inner" data-astro-cid-j7pv25f6></div> </div> </div> </div> <div class="elementor-element elementor-element-2f02f95 elementor-widget elementor-widget-icon-box" data-id="2f02f95" data-element_type="widget" data-widget_type="icon-box.default" data-astro-cid-j7pv25f6> <div class="elementor-widget-container" data-astro-cid-j7pv25f6> <div class="elementor-icon-box-wrapper" data-astro-cid-j7pv25f6> <div class="elementor-icon-box-content" data-astro-cid-j7pv25f6> <h3 class="elementor-icon-box-title" data-astro-cid-j7pv25f6> <a href="/#" data-astro-cid-j7pv25f6>
+Work in Commercial Styling </a> </h3> </div> </div> </div> </div> </div> </div> </div> </section> <section class="elementor-section elementor-inner-section elementor-element elementor-element-a7803e5 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a7803e5" data-element_type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}" data-astro-cid-j7pv25f6> <div class="elementor-container elementor-column-gap-default" data-astro-cid-j7pv25f6> <div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-c04ee69 " data-id="c04ee69" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:400}" data-astro-cid-j7pv25f6> <div class="elementor-widget-wrap elementor-element-populated" data-astro-cid-j7pv25f6> <div class="elementor-background-overlay" data-astro-cid-j7pv25f6></div> <div class="elementor-element elementor-element-1c3936f elementor-widget elementor-widget-spacer" data-id="1c3936f" data-element_type="widget" data-widget_type="spacer.default" data-astro-cid-j7pv25f6> <div class="elementor-widget-container" data-astro-cid-j7pv25f6> <div class="elementor-spacer" data-astro-cid-j7pv25f6> <div class="elementor-spacer-inner" data-astro-cid-j7pv25f6></div> </div> </div> </div> <div class="elementor-element elementor-element-c151f63 elementor-widget elementor-widget-icon-box" data-id="c151f63" data-element_type="widget" data-widget_type="icon-box.default" data-astro-cid-j7pv25f6> <div class="elementor-widget-container" data-astro-cid-j7pv25f6> <div class="elementor-icon-box-wrapper" data-astro-cid-j7pv25f6> <div class="elementor-icon-box-content" data-astro-cid-j7pv25f6> <h3 class="elementor-icon-box-title" data-astro-cid-j7pv25f6> <a href="/#" data-astro-cid-j7pv25f6>
+Work in E-commerce Styling </a> </h3> </div> </div> </div> </div> </div> </div> <div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-6820976 " data-id="6820976" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:500}" data-astro-cid-j7pv25f6> <div class="elementor-widget-wrap elementor-element-populated" data-astro-cid-j7pv25f6> <div class="elementor-background-overlay" data-astro-cid-j7pv25f6></div> <div class="elementor-element elementor-element-ced5aac elementor-widget elementor-widget-spacer" data-id="ced5aac" data-element_type="widget" data-widget_type="spacer.default" data-astro-cid-j7pv25f6> <div class="elementor-widget-container" data-astro-cid-j7pv25f6> <div class="elementor-spacer" data-astro-cid-j7pv25f6> <div class="elementor-spacer-inner" data-astro-cid-j7pv25f6></div> </div> </div> </div> <div class="elementor-element elementor-element-e81dc69 elementor-widget elementor-widget-icon-box" data-id="e81dc69" data-element_type="widget" data-widget_type="icon-box.default" data-astro-cid-j7pv25f6> <div class="elementor-widget-container" data-astro-cid-j7pv25f6> <div class="elementor-icon-box-wrapper" data-astro-cid-j7pv25f6> <div class="elementor-icon-box-content" data-astro-cid-j7pv25f6> <h3 class="elementor-icon-box-title" data-astro-cid-j7pv25f6> <a href="/#" data-astro-cid-j7pv25f6>
+Work in Editorial Fashion Styling </a> </h3> </div> </div> </div> </div> </div> </div> <div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-fb50b3b " data-id="fb50b3b" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:500}" data-astro-cid-j7pv25f6> <div class="elementor-widget-wrap elementor-element-populated" data-astro-cid-j7pv25f6> <div class="elementor-background-overlay" data-astro-cid-j7pv25f6></div> <div class="elementor-element elementor-element-c5a1e1a elementor-widget elementor-widget-spacer" data-id="c5a1e1a" data-element_type="widget" data-widget_type="spacer.default" data-astro-cid-j7pv25f6> <div class="elementor-widget-container" data-astro-cid-j7pv25f6> <div class="elementor-spacer" data-astro-cid-j7pv25f6> <div class="elementor-spacer-inner" data-astro-cid-j7pv25f6></div> </div> </div> </div> <div class="elementor-element elementor-element-bd10370 elementor-widget elementor-widget-icon-box" data-id="bd10370" data-element_type="widget" data-widget_type="icon-box.default" data-astro-cid-j7pv25f6> <div class="elementor-widget-container" data-astro-cid-j7pv25f6> <div class="elementor-icon-box-wrapper" data-astro-cid-j7pv25f6> <div class="elementor-icon-box-content" data-astro-cid-j7pv25f6> <h3 class="elementor-icon-box-title" data-astro-cid-j7pv25f6> <a href="/#" data-astro-cid-j7pv25f6>
+Secure Paid Work as a Fashion Writer &amp; Fashion Blogger </a> </h3> </div> </div> </div> </div> </div> </div> <div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-7696bc1 " data-id="7696bc1" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:500}" data-astro-cid-j7pv25f6> <div class="elementor-widget-wrap elementor-element-populated" data-astro-cid-j7pv25f6> <div class="elementor-background-overlay" data-astro-cid-j7pv25f6></div> <div class="elementor-element elementor-element-8fbfa48 elementor-widget elementor-widget-spacer" data-id="8fbfa48" data-element_type="widget" data-widget_type="spacer.default" data-astro-cid-j7pv25f6> <div class="elementor-widget-container" data-astro-cid-j7pv25f6> <div class="elementor-spacer" data-astro-cid-j7pv25f6> <div class="elementor-spacer-inner" data-astro-cid-j7pv25f6></div> </div> </div> </div> <div class="elementor-element elementor-element-8a4284e elementor-widget elementor-widget-icon-box" data-id="8a4284e" data-element_type="widget" data-widget_type="icon-box.default" data-astro-cid-j7pv25f6> <div class="elementor-widget-container" data-astro-cid-j7pv25f6> <div class="elementor-icon-box-wrapper" data-astro-cid-j7pv25f6> <div class="elementor-icon-box-content" data-astro-cid-j7pv25f6> <h3 class="elementor-icon-box-title" data-astro-cid-j7pv25f6> <a href="/#" data-astro-cid-j7pv25f6>
+Secure Projects in Runway Styling </a> </h3> </div> </div> </div> </div> </div> </div> <div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-021ab40 " data-id="021ab40" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:600}" data-astro-cid-j7pv25f6> <div class="elementor-widget-wrap elementor-element-populated" data-astro-cid-j7pv25f6> <div class="elementor-background-overlay" data-astro-cid-j7pv25f6></div> <div class="elementor-element elementor-element-229c255 elementor-widget elementor-widget-spacer" data-id="229c255" data-element_type="widget" data-widget_type="spacer.default" data-astro-cid-j7pv25f6> <div class="elementor-widget-container" data-astro-cid-j7pv25f6> <div class="elementor-spacer" data-astro-cid-j7pv25f6> <div class="elementor-spacer-inner" data-astro-cid-j7pv25f6></div> </div> </div> </div> <div class="elementor-element elementor-element-5fac46f elementor-widget elementor-widget-icon-box" data-id="5fac46f" data-element_type="widget" data-widget_type="icon-box.default" data-astro-cid-j7pv25f6> <div class="elementor-widget-container" data-astro-cid-j7pv25f6> <div class="elementor-icon-box-wrapper" data-astro-cid-j7pv25f6> <div class="elementor-icon-box-content" data-astro-cid-j7pv25f6> <h3 class="elementor-icon-box-title" data-astro-cid-j7pv25f6> <a href="/#" data-astro-cid-j7pv25f6>
+Secure Project in Shoot Production </a> </h3> </div> </div> </div> </div> </div> </div> </div> </section> </div> </div> </div> </section> <section class="elementor-section elementor-top-section elementor-element elementor-element-ef30a33 elementor-reverse-tablet elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ef30a33" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;jet_parallax_layout_list&quot;:[]}">
 						<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-7f7c15d6 " data-id="7f7c15d6" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;}">
 			<div class="elementor-widget-wrap elementor-element-populated">
@@ -1444,11 +812,11 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-13c3aed3 elementor-widget elementor-widget-heading" data-id="13c3aed3" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-					<h4 class="elementor-heading-title elementor-size-default">12 Week Duration</h4>				</div>
+					<h4 class="elementor-heading-title elementor-size-default">Styling + AI Advantage</h4>				</div>
 				</div>
 				<div class="elementor-element elementor-element-432fdee2 elementor-widget elementor-widget-text-editor" data-id="432fdee2" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-									<p>Fast-track your fashion career with concise, comprehensive courses designed for maximum learning in just 12 weeks.</p>								</div>
+									<p>Learn not just styling, but how to use AI tools to showcase your work and grow faster</p>								</div>
 				</div>
 					</div>
 		</div>
@@ -1456,11 +824,11 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-5c66efda elementor-widget elementor-widget-heading" data-id="5c66efda" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-					<h4 class="elementor-heading-title elementor-size-default">Career Support</h4>				</div>
+					<h4 class="elementor-heading-title elementor-size-default">Portfolio-Driven Learning</h4>				</div>
 				</div>
 				<div class="elementor-element elementor-element-599eea9d elementor-widget elementor-widget-text-editor" data-id="599eea9d" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-									<p>Receive dedicated career guidance, from portfolio building to interview preparation, ensuring you’re industry-ready and confident.</p>								</div>
+									<p>Build real projects so you’re ready to work, not just certified</p>								</div>
 				</div>
 					</div>
 		</div>
@@ -1472,11 +840,11 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-61151a90 elementor-widget elementor-widget-heading" data-id="61151a90" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-					<h4 class="elementor-heading-title elementor-size-default">Flexibility to learn anytime, anywhere</h4>				</div>
+					<h4 class="elementor-heading-title elementor-size-default">Career & Income Focus</h4>				</div>
 				</div>
 				<div class="elementor-element elementor-element-4e6c56f9 elementor-widget elementor-widget-text-editor" data-id="4e6c56f9" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-									<p>Enjoy the flexibility of live interactive classes and access recorded lessons anytime to learn at your own pace.</p>								</div>
+									<p>Learn how to attract clients and start earning right after the course</p>								</div>
 				</div>
 					</div>
 		</div>
@@ -1484,11 +852,11 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-17512193 elementor-widget elementor-widget-heading" data-id="17512193" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-					<h4 class="elementor-heading-title elementor-size-default">Government Certification</h4>				</div>
+					<h4 class="elementor-heading-title elementor-size-default">Flexible Learning Experience</h4>				</div>
 				</div>
 				<div class="elementor-element elementor-element-1941f7ac elementor-widget elementor-widget-text-editor" data-id="1941f7ac" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-									<p>Earn a prestigious, government-recognized certification that adds credibility to your skills and enhances your professional profile.</p>								</div>
+									<p>Designed to fit into your schedule without putting life on hold</p>								</div>
 				</div>
 					</div>
 		</div>
