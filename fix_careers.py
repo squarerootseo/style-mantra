@@ -1,54 +1,47 @@
 import re
 
+files = ['src/pages/index.astro', 'src/pages/our-course.astro']
+
 careers = [
-    ("5504cd1", "/images/1-13.webp", "Become a Professional Fashion Stylist", "400"),
-    ("0811d89", "/images/2-14.webp", "Become an Art Director", "500"),
-    ("5d244a7", "/images/3-11.webp", "Become a Celebrity Stylist", "500"),
-    ("cf5a678", "/images/4-9.webp", "Work in Advertising &amp; Brand Styling", "600"),
-    ("2692c22", "/images/5-7.webp", "Work in Commercial Styling", "700"),
-    
-    ("c04ee69", "/images/6-6.webp", "Work in E-commerce Styling", "400"),
-    ("6820976", "/images/7-3.webp", "Work in Editorial Fashion Styling", "500"),
-    ("fb50b3b", "/images/8-3.webp", "Secure Paid Work as a Fashion Writer &amp; Fashion Blogger", "500"),
-    ("7696bc1", "/images/9-3.webp", "Secure Projects in Runway Styling", "600"),
-    ("021ab40", "/images/10.webp", "Secure Project in Shoot Production", "700")
+    ("Professional Fashion Stylist", "/images/career-1.png"),
+    ("Art Direction", "/images/career-2.png"),
+    ("Celebrity Stylist", "/images/career-3.png"),
+    ("Media and Brand Stylist", "/images/career-4.png"),
+    ("Commercial Stylist", "/images/career-5.png"),
+    ("Editorial Stylist", "/images/career-6.png"),
+    ("E-commerce Stylist", "/images/career-7.png"),
+    ("Fashion Blogger and Fashion Journalist", "/images/career-8.jpeg"),
+    ("Runway Stylist", "/images/career-9.jpeg"),
+    ("Makeup Artist and Shoot projection", "/images/career-10.jpeg"),
 ]
 
-sections = [
-    ("2daef8a", careers[0:5]),
-    ("a7803e5", careers[5:10])
-]
+# For index.astro, the text is inside <h3 class="elementor-icon-box-title"> ... </a>
+# We don't need to change image URLs in index.astro because they are driven by post-24.css
 
-html = open("src/pages/index.astro").read()
+# For our-course.astro, the images are <img src="..."> and text in <div class="card_carousel_title">...</div>
 
-# First inner section start
-start_idx = html.find('elementor-element-2daef8a')
-start_idx = html.rfind('<section', 0, start_idx)
+# Let's just manually fix them using string replacements based on the order, or write a careful regex.
 
-# After second inner section end
-end_idx = html.find('elementor-element-ef30a33')
-end_idx = html.rfind('<section', 0, end_idx)
+with open('src/pages/our-course.astro', 'r') as f:
+    content = f.read()
 
-prefix = html[:start_idx]
+# The images to replace in our-course.astro:
+img_replacements = {
+    '1-13.webp': 'career-1.png',
+    '2-14.webp': 'career-2.png',
+    '3-11.webp': 'career-3.png',
+    '4-9.webp': 'career-4.png',
+    '5-7.webp': 'career-5.png',
+    '6-6.webp': 'career-6.png',
+    '7-3.webp': 'career-7.png',
+    '8-3.webp': 'career-8.jpeg',
+    '9-3.webp': 'career-9.jpeg',
+    '10.webp': 'career-10.jpeg'
+}
 
-out = []
-for sec_id, cards in sections:
-    out.append(f'\t\t\t\t<section class="elementor-section elementor-inner-section elementor-element elementor-element-{sec_id} elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="{sec_id}" data-element_type="section" data-settings="{{&quot;jet_parallax_layout_list&quot;:[]}}">\n')
-    out.append('\t\t\t\t\t\t<div class="elementor-container elementor-column-gap-default">\n')
-    
-    for item in cards:
-        col_html = f'''\t\t\t\t\t<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-{item[0]} " data-id="{item[0]}" data-element_type="column" data-settings="{{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:{item[3]}}}">
-\t\t\t<div class="sm-module-card">
-        <div class="sm-module-top">
-            <h3>{item[2]}</h3>
-        </div>
-        <div class="sm-module-bottom" style="background-image: url('{item[1]}');"></div>
-    </div>
-</div>\n'''
-        out.append(col_html)
-    
-    out.append('\t\t\t\t\t\t</div>\n\t\t\t\t</section>\n')
+for old, new in img_replacements.items():
+    content = content.replace(f'/images/{old}', f'/images/{new}')
 
-new_html = prefix + "".join(out) + html[end_idx:]
-open("src/pages/index.astro", "w").write(new_html)
-print("Complete!")
+with open('src/pages/our-course.astro', 'w') as f:
+    f.write(content)
+
