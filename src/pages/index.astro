@@ -1346,6 +1346,15 @@ Makeup Artist and Shoot projection </a> </h3> </div> </div> </div> </div> </div>
 					</button>
 				</div>
 			</div>
+
+		<!-- Download Free Career Guide Button -->
+		<div style="margin-top:16px; padding-top:16px; border-top:1px solid rgba(255,255,255,0.15); text-align:center;">
+			<p style="font-family:'Jost',sans-serif; font-size:0.72rem; color:rgba(255,255,255,0.45); margin-bottom:10px; letter-spacing:1px; text-transform:uppercase;">Or</p>
+			<button type="button" id="sm-footer-ebook-btn" style="width:100%; padding:13px 20px; background:transparent; color:#fff; border:1.5px solid rgba(255,255,255,0.35); border-radius:4px; font-family:'Jost',sans-serif; font-size:0.82rem; font-weight:600; letter-spacing:1px; text-transform:uppercase; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:8px; transition:background 0.2s, border-color 0.2s;" onmouseover="this.style.background='rgba(255,255,255,0.1)';this.style.borderColor='rgba(255,255,255,0.7)';" onmouseout="this.style.background='transparent';this.style.borderColor='rgba(255,255,255,0.35)';">
+				<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+				Download Free Career Guide
+			</button>
+		</div>
 		</form>
 						</div>
 				</div>
@@ -2264,6 +2273,16 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape' && overlay.classList.contains('sm-popup-open')) closePopup();
   });
+
+  // ── Footer "Download Free Career Guide" button ────────
+  var footerBtn = document.getElementById('sm-footer-ebook-btn');
+  footerBtn && footerBtn.addEventListener('click', function () {
+    // Reset the fired flag so popup can reopen from footer button even if already triggered
+    fired = false;
+    localStorage.removeItem(STORAGE_KEY);
+    openPopup();
+  });
+
 
   // ── Form submit → /thank-you ─────────────────────────
   form && form.addEventListener('submit', function (e) {
