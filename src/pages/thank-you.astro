@@ -1,0 +1,242 @@
+---
+// Thank You page - shown after free ebook form submission
+---
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You – Style Mantra</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/frontend.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Jost', sans-serif;
+      background-color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ── Minimal Nav Bar ─────────────────────────────── */
+    .ty-nav {
+      background: #fff;
+      border-bottom: 1px solid #eee;
+      padding: 16px 40px;
+      display: flex;
+      align-items: center;
+    }
+    .ty-nav a img {
+      height: 48px;
+      width: auto;
+    }
+
+    /* ── Main Content ─────────────────────────────────── */
+    .ty-main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 24px;
+      background: linear-gradient(135deg, #fff 0%, #fdf5f5 100%);
+    }
+
+    .ty-card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.10);
+      max-width: 620px;
+      width: 100%;
+      padding: 60px 48px;
+      text-align: center;
+    }
+
+    /* Checkmark circle */
+    .ty-check {
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      background: #B01615;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 32px;
+      animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+    }
+    @keyframes popIn {
+      from { transform: scale(0); opacity: 0; }
+      to   { transform: scale(1); opacity: 1; }
+    }
+    .ty-check svg {
+      width: 44px;
+      height: 44px;
+      stroke: #fff;
+      stroke-width: 2.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+    .ty-check svg path {
+      stroke-dasharray: 60;
+      stroke-dashoffset: 60;
+      animation: drawCheck 0.4s 0.4s ease forwards;
+    }
+    @keyframes drawCheck {
+      to { stroke-dashoffset: 0; }
+    }
+
+    .ty-eyebrow {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #B01615;
+      margin-bottom: 12px;
+    }
+
+    .ty-headline {
+      font-size: clamp(1.75rem, 4vw, 2.4rem);
+      font-weight: 700;
+      color: #111;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+
+    .ty-subtext {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 40px;
+    }
+
+    .ty-divider {
+      width: 48px;
+      height: 3px;
+      background: #B01615;
+      margin: 0 auto 32px;
+      border-radius: 2px;
+    }
+
+    /* ── Buttons ──────────────────────────────────────── */
+    .ty-buttons {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .ty-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 32px;
+      border-radius: 6px;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      min-width: 175px;
+      justify-content: center;
+    }
+
+    .ty-btn-primary {
+      background: #B01615;
+      color: #fff;
+      border: 2px solid #B01615;
+    }
+    .ty-btn-primary:hover {
+      background: #8e1010;
+      border-color: #8e1010;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(176,22,21,0.3);
+    }
+
+    .ty-btn-outline {
+      background: transparent;
+      color: #111;
+      border: 2px solid #ddd;
+    }
+    .ty-btn-outline:hover {
+      border-color: #B01615;
+      color: #B01615;
+      transform: translateY(-2px);
+    }
+
+    /* ── Footer ───────────────────────────────────────── */
+    .ty-footer {
+      text-align: center;
+      padding: 20px 24px;
+      font-size: 0.8rem;
+      color: #aaa;
+      border-top: 1px solid #f0f0f0;
+    }
+
+    /* ── Mobile ───────────────────────────────────────── */
+    @media (max-width: 480px) {
+      .ty-card {
+        padding: 48px 28px;
+      }
+      .ty-btn {
+        min-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Minimal Nav -->
+  <nav class="ty-nav">
+    <a href="/">
+      <img src="/images/sm-logo.png" alt="Style Mantra" onerror="this.style.display='none'; this.parentElement.innerHTML='<span style=\'font-size:1.2rem;font-weight:700;color:#111;\'>Style Mantra</span>'">
+    </a>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="ty-main">
+    <div class="ty-card">
+
+      <!-- Animated Checkmark -->
+      <div class="ty-check">
+        <svg viewBox="0 0 52 52">
+          <path d="M14 26 L22 34 L38 18" />
+        </svg>
+      </div>
+
+      <p class="ty-eyebrow">You're In!</p>
+      <h1 class="ty-headline">Your Free Career Guide is on its Way!</h1>
+      <div class="ty-divider"></div>
+      <p class="ty-subtext">
+        We've sent your <strong>Free Fashion Career Guide</strong> to your email. Check your inbox — and your spam folder, just in case.<br><br>
+        In the meantime, feel free to explore what Style Mantra has to offer, or reach out if you have any questions.
+      </p>
+
+      <div class="ty-buttons">
+        <a href="/" class="ty-btn ty-btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+          </svg>
+          Return to Home
+        </a>
+        <a href="/contact" class="ty-btn ty-btn-outline">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+          </svg>
+          Contact Us
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="ty-footer">
+    © 2024 Style Mantra. All rights reserved.
+  </footer>
+
+</body>
+</html>
