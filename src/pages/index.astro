@@ -2208,6 +2208,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const STORAGE_KEY = 'sm_popup_dismissed';
   const COOLDOWN_HOURS = 24; // Don't show again within 24 hours
 
+  // Clear any stale dismissed state left over from previous page versions
+  // (e.g. from the old 5s timer that was removed)
+  const dismissedAt = localStorage.getItem(STORAGE_KEY);
+  if (dismissedAt && isNaN(parseInt(dismissedAt, 10))) {
+    localStorage.removeItem(STORAGE_KEY);
+  }
+
   const overlay = document.getElementById('sm-ebook-overlay');
   const closeBtn = document.getElementById('sm-popup-close-btn');
   const form = document.getElementById('sm-ebook-form');
@@ -2238,21 +2245,36 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ── Trigger: Scroll past hero section ─────────────────
-  const heroSection = document.querySelector('.sm-hero-slider');
-  if (heroSection && 'IntersectionObserver' in window) {
-    window._smScrollObserver = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          // When hero is no longer visible (scrolled past it)
-          if (!entry.isIntersecting) {
-            openPopup();
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-    window._smScrollObserver.observe(heroSection);
+  // Use a scroll listener + getBoundingClientRect for maximum reliability.
+  // Guard: only fire after the hero was first VISIBLE, then scrolled past.
+  const heroTarget = document.querySelector('[data-id="2de00f9f"]') ||
+                     document.querySelector('.sm-hero-slider') ||
+                     document.querySelector('.elementor-element-2de00f9f');
+
+  let heroWasVisible = false;
+  let popupFired = false;
+
+  function onScroll() {
+    if (popupFired) { window.removeEventListener('scroll', onScroll); return; }
+    if (!heroTarget) return;
+
+    const rect = heroTarget.getBoundingClientRect();
+
+    // Mark once the hero has been in-view
+    if (rect.bottom > 0 && rect.top < window.innerHeight) {
+      heroWasVisible = true;
+    }
+
+    // Fire only after hero was visible AND is now fully above the viewport
+    if (heroWasVisible && rect.bottom <= 0) {
+      popupFired = true;
+      window.removeEventListener('scroll', onScroll);
+      openPopup();
+    }
   }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+
 
   // ── Close on button click ─────────────────────────────
   closeBtn && closeBtn.addEventListener('click', closePopup);
