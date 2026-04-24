@@ -2209,28 +2209,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // ═══════════════════════════════════════════════════════
 //  EBOOK POPUP LOGIC
+//  No cooldown — popup shows on EVERY page load/refresh.
+//  The fired flag is in-memory only, so it resets each visit.
 // ═══════════════════════════════════════════════════════
 (function () {
-  // New key — avoids any stale data from previous versions
-  const STORAGE_KEY = 'sm_ebook_popup_v2';
-  const COOLDOWN_MS  = 24 * 60 * 60 * 1000; // 24 hours in ms
-
   const overlay  = document.getElementById('sm-ebook-overlay');
   const closeBtn = document.getElementById('sm-popup-close-btn');
   const form     = document.getElementById('sm-ebook-form');
 
   if (!overlay) return;
 
-  // ── Cooldown check ───────────────────────────────────
-  function shouldShow() {
-    const ts = localStorage.getItem(STORAGE_KEY);
-    if (!ts) return true;
-    return (Date.now() - Number(ts)) >= COOLDOWN_MS;
-  }
-
   // ── Open / Close ─────────────────────────────────────
   function openPopup() {
-    if (!shouldShow()) return;
     overlay.classList.add('sm-popup-open');
     document.body.style.overflow = 'hidden';
   }
@@ -2238,7 +2228,6 @@ document.addEventListener('DOMContentLoaded', () => {
   function closePopup() {
     overlay.classList.remove('sm-popup-open');
     document.body.style.overflow = '';
-    localStorage.setItem(STORAGE_KEY, String(Date.now()));
     window.removeEventListener('scroll', onScroll);
   }
 
@@ -2275,7 +2264,6 @@ document.addEventListener('DOMContentLoaded', () => {
   footerBtn && footerBtn.addEventListener('click', function () {
     // Reset the fired flag so popup can reopen from footer button even if already triggered
     fired = false;
-    localStorage.removeItem(STORAGE_KEY);
     openPopup();
   });
 
@@ -2295,8 +2283,6 @@ document.addEventListener('DOMContentLoaded', () => {
       else       { el.style.borderColor = ''; }
     });
     if (!valid) return;
-
-    localStorage.setItem(STORAGE_KEY, String(Date.now()));
     window.location.href = '/thank-you';
   });
 
