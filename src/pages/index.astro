@@ -2234,13 +2234,10 @@ document.addEventListener('DOMContentLoaded', () => {
     localStorage.setItem(STORAGE_KEY, Date.now().toString());
     // Cleanup observers/timers
     if (window._smScrollObserver) window._smScrollObserver.disconnect();
-    clearTimeout(window._smTimerHandle);
+
   }
 
-  // ── Trigger 1: 5-second timer ────────────────────────
-  window._smTimerHandle = setTimeout(openPopup, 5000);
-
-  // ── Trigger 2: Scroll past hero section ──────────────
+  // ── Trigger: Scroll past hero section ─────────────────
   const heroSection = document.querySelector('.sm-hero-slider');
   if (heroSection && 'IntersectionObserver' in window) {
     window._smScrollObserver = new IntersectionObserver(
