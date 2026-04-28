@@ -106,6 +106,186 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
       display: none !important;
     }
     body.dialog-lightbox-body::before, body::after { display: none !important; }
+
+    /* About page banner image override */
+    .elementor-element.elementor-element-38cca75b {
+      background-image: url('/images/about-page-banner.png') !important;
+      background-size: cover !important;
+      background-position: center 15% !important;
+      min-height: 400px !important;
+    }
+
+    /* Remove old background from Fashion section right column */
+    .elementor-element.elementor-element-1195f691 {
+      background-image: none !important;
+      background: none !important;
+    }
+
+    /* Override Ready to Style Your Future section background */
+    .elementor-element.elementor-element-61b90c84 {
+      background-image: url('/images/about-ready-to-style.png') !important;
+      background-size: cover !important;
+      background-position: center 15% !important;
+    }
+
+    /* Premium UI redesign for 'Our Values' Section Cards */
+    .elementor-element.elementor-element-62e08931 .elementor-column > .elementor-widget-wrap.elementor-element-populated,
+    .elementor-element.elementor-element-3de4ffb6 .elementor-column > .elementor-widget-wrap.elementor-element-populated {
+      background: #ffffff !important;
+      border: 1px solid rgba(0, 0, 0, 0.04) !important;
+      border-radius: 16px !important;
+      box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.05) !important;
+      padding: 180px 30px 40px !important; /* Increased top padding to match larger image */
+      margin: 15px !important; 
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+      height: 100% !important;
+      position: relative !important;
+      overflow: hidden !important;
+    }
+
+    /* Add image banner to the top ~35% of each card */
+    .elementor-element.elementor-element-62e08931 .elementor-column > .elementor-widget-wrap.elementor-element-populated::before,
+    .elementor-element.elementor-element-3de4ffb6 .elementor-column > .elementor-widget-wrap.elementor-element-populated::before {
+      content: '' !important;
+      position: absolute !important;
+      top: 0 !important;
+      left: 0 !important;
+      width: 100% !important;
+      height: 150px !important; /* Increased height to ~35% of the card */
+      background-size: cover !important;
+      background-position: center 25% !important;
+      z-index: 0 !important;
+      transition: all 0.5s ease !important;
+    }
+
+    /* Assign specific images to each card */
+    .elementor-element.elementor-element-68befbd5 > .elementor-widget-wrap.elementor-element-populated::before { background-image: url('/images/tile 2.jpeg') !important; }
+    .elementor-element.elementor-element-43c75c3 > .elementor-widget-wrap.elementor-element-populated::before { background-image: url('/images/tile 4.jpeg') !important; }
+    .elementor-element.elementor-element-10240ec1 > .elementor-widget-wrap.elementor-element-populated::before { background-image: url('/images/tile 5.jpeg') !important; }
+    .elementor-element.elementor-element-677e6771 > .elementor-widget-wrap.elementor-element-populated::before { background-image: url('/images/tile 6.jpeg') !important; }
+    .elementor-element.elementor-element-6b63d735 > .elementor-widget-wrap.elementor-element-populated::before { background-image: url('/images/tile 8.jpeg') !important; }
+    .elementor-element.elementor-element-440ed08d > .elementor-widget-wrap.elementor-element-populated::before { background-image: url('/images/tile 10.jpeg') !important; }
+
+    /* Hover effect for the cards */
+    .elementor-element.elementor-element-62e08931 .elementor-column > .elementor-widget-wrap.elementor-element-populated:hover,
+    .elementor-element.elementor-element-3de4ffb6 .elementor-column > .elementor-widget-wrap.elementor-element-populated:hover {
+      transform: translateY(-8px) !important;
+      box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.1) !important;
+      border-color: rgba(0, 0, 0, 0.08) !important;
+    }
+    
+    /* Image zoom on hover */
+    .elementor-element.elementor-element-62e08931 .elementor-column > .elementor-widget-wrap.elementor-element-populated:hover::before,
+    .elementor-element.elementor-element-3de4ffb6 .elementor-column > .elementor-widget-wrap.elementor-element-populated:hover::before {
+      transform: scale(1.05) !important;
+    }
+
+    /* Ensure content stays above the image */
+    .elementor-element.elementor-element-62e08931 .elementor-widget,
+    .elementor-element.elementor-element-3de4ffb6 .elementor-widget {
+      position: relative !important;
+      z-index: 1 !important;
+    }
+
+    /* Styling for the Icon Box container */
+    .elementor-element.elementor-element-62e08931 .ekit-header-info > li > a,
+    .elementor-element.elementor-element-3de4ffb6 .ekit-header-info > li > a {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: flex-start !important;
+      font-family: 'Clash Display', sans-serif !important;
+      font-size: 24px !important;
+      font-weight: 600 !important;
+      color: #111111 !important;
+      gap: 15px !important;
+      margin-bottom: 20px !important;
+    }
+
+    /* Make the Icon stand out */
+    .elementor-element.elementor-element-62e08931 .ekit-header-info > li > a > i,
+    .elementor-element.elementor-element-3de4ffb6 .ekit-header-info > li > a > i {
+      font-size: 20px !important;
+      color: var(--e-global-color-primary) !important;
+      background: #ffffff !important;
+      width: 48px !important;
+      height: 48px !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      border-radius: 50% !important;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08) !important;
+      transition: all 0.3s ease !important;
+      margin-right: 0 !important;
+      margin-top: -30px !important; /* Pull the icon up slightly over the image border */
+    }
+
+    /* Icon hover effect */
+    .elementor-element.elementor-element-62e08931 .elementor-column > .elementor-widget-wrap.elementor-element-populated:hover .ekit-header-info > li > a > i,
+    .elementor-element.elementor-element-3de4ffb6 .elementor-column > .elementor-widget-wrap.elementor-element-populated:hover .ekit-header-info > li > a > i {
+      background: var(--e-global-color-primary) !important;
+      color: #ffffff !important;
+      transform: translateY(-5px) !important;
+    }
+
+    /* Text content styling */
+    .elementor-element.elementor-element-62e08931 .elementor-widget-text-editor p,
+    .elementor-element.elementor-element-3de4ffb6 .elementor-widget-text-editor p {
+      color: #555555 !important;
+      line-height: 1.6 !important;
+      font-size: 16px !important;
+    }
+
+    /* Premium Styling for Founder Cards */
+    .founder-card {
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid rgba(0,0,0,0.03);
+    }
+    .founder-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.12);
+    }
+    .founder-image-wrapper {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      overflow: hidden;
+    }
+    .founder-image-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+    .founder-card:hover .founder-image-wrapper img {
+      transform: scale(1.05);
+    }
+    .founder-info {
+      padding: 30px;
+      text-align: center;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .founder-name {
+      font-family: 'Clash Display', sans-serif;
+      font-size: 24px;
+      font-weight: 600;
+      color: #111;
+      margin-bottom: 10px;
+    }
+    .founder-desc {
+      color: #666;
+      font-size: 15px;
+      line-height: 1.6;
+      margin: 0;
+    }
   </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/v4-shims.min.css"><style is:inline>@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap");@font-face {font-family: "eicons";src: url("https://unpkg.com/elementor@3.21.6/assets/lib/eicons/fonts/eicons.woff2") format("woff2");font-weight: 400;font-style: normal;}@font-face {font-family: "jkiticon";src: url("https://raw.githubusercontent.com/jegtheme/jeg-elementor-kit/master/assets/fonts/jkiticon.woff") format("woff");}</style>
 </head>
@@ -200,23 +380,10 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 				</div>
 					</div>
 		</div>
-				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-1195f691 animated fadeIn" data-id="1195f691" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;}">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-afbd428 elementor-widget elementor-widget-spacer" data-id="afbd428" data-element_type="widget" data-widget_type="spacer.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-spacer">
-			<div class="elementor-spacer-inner"></div>
-		</div>
-						</div>
-				</div>
-				<div class="elementor-element elementor-element-9159194 elementor-widget elementor-widget-spacer" data-id="9159194" data-element_type="widget" data-widget_type="spacer.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-spacer">
-			<div class="elementor-spacer-inner"></div>
-		</div>
-						</div>
-				</div>
-					</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-1195f691 animated fadeIn" data-id="1195f691" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;}" style="background-image: none !important; background: none !important;">
+			<div class="elementor-widget-wrap elementor-element-populated" style="padding: 0; display: flex; align-items: center; justify-content: center;">
+				<img src="/images/about-us-page-2.png" alt="Fashion styling at Style Mantra" style="width: 100%; height: auto; object-fit: cover; border-radius: 8px;" />
+			</div>
 		</div>
 					</div>
 		</section>
@@ -449,35 +616,23 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 		</div>
 					</div>
 		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-1c1ee4c2 elementor-reverse-tablet elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1c1ee4c2" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;jet_parallax_layout_list&quot;:[]}">
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-1c1ee4c2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1c1ee4c2" data-element_type="section" style="padding-top: 100px; padding-bottom: 100px; background-color: #fcfcfc;">
 						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-62814 animated fadeIn" data-id="62814" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;}">
+				<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5635bf74" data-id="5635bf74" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-224f6e56 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="224f6e56" data-element_type="widget" data-widget_type="divider.default">
+						<div class="elementor-element elementor-element-5036dd1c elementor-widget elementor-widget-text-editor animated fadeIn" data-id="5036dd1c" data-element_type="widget" data-widget_type="text-editor.default" style="text-align: center;">
 				<div class="elementor-widget-container">
-							<div class="elementor-divider">
-			<span class="elementor-divider-separator">
-						</span>
-		</div>
-						</div>
+									<p style="color: var(--e-global-color-primary); font-weight: 600; letter-spacing: 2px;">MEET THE TEAM</p>								</div>
 				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-5635bf74" data-id="5635bf74" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-5036dd1c elementor-widget elementor-widget-text-editor animated fadeIn" data-id="5036dd1c" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-60d77b91 elementor-widget elementor-widget-heading animated fadeIn" data-id="60d77b91" data-element_type="widget" data-widget_type="heading.default" style="text-align: center;">
 				<div class="elementor-widget-container">
-									<p>MEET THE TEAM</p>								</div>
+					<h2 class="elementor-heading-title elementor-size-default" style="font-family: 'Clash Display', sans-serif; font-size: 42px; font-weight: 700; color: #111;">Behind the Style Mantra</h2>
+					<p style="margin-top: 15px; font-size: 18px; color: #555; max-width: 700px; margin-left: auto; margin-right: auto;">Learn from industry professionals who have styled Celebrities, real shoots, real brands and real people.</p>				</div>
 				</div>
-				<div class="elementor-element elementor-element-60d77b91 elementor-widget elementor-widget-heading animated fadeIn" data-id="60d77b91" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default">The Stylists Behind Style Mantra</h2>
-					<p style="margin-top: 15px; font-size: 16px; color: #555;">Learn from industry professionals who have styled Celebrities, real shoots, real brands and real people.</p>				</div>
-				</div>
-				<div class="elementor-element elementor-element-994e997 elementor-widget elementor-widget-button animated fadeIn" data-id="994e997" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:600}" data-widget_type="button.default">
+				<div class="elementor-element elementor-element-994e997 elementor-widget elementor-widget-button animated fadeIn" data-id="994e997" data-element_type="widget" data-widget_type="button.default" style="text-align: center; margin-bottom: 60px;">
 				<div class="elementor-widget-container">
 									<div class="elementor-button-wrapper">
-					<a class="elementor-button elementor-button-link elementor-size-sm" href="/contact">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="/contact" style="display: inline-block;">
 						<span class="elementor-button-content-wrapper">
 									<span class="elementor-button-text">Get Started</span>
 					</span>
@@ -485,59 +640,40 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 				</div>
 								</div>
 				</div>
-				<section class="elementor-section elementor-inner-section elementor-element elementor-element-786878e elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="786878e" data-element_type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-1987732 animated fadeIn" data-id="1987732" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:400}">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-384930f elementor-widget elementor-widget-heading" data-id="384930f" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h4 class="elementor-heading-title elementor-size-default">12 Week Duration</h4>				</div>
-				</div>
-				<div class="elementor-element elementor-element-634baa0 elementor-widget elementor-widget-text-editor" data-id="634baa0" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-									<p>Fast-track your fashion career with concise, comprehensive courses designed for maximum learning in just 12 weeks.</p>								</div>
-				</div>
-					</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-section-boxed elementor-section-height-default" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-large" style="display: flex; gap: 30px; justify-content: center; flex-wrap: wrap;">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element animated fadeIn" style="flex: 1; min-width: 300px;">
+			<div class="elementor-widget-wrap elementor-element-populated founder-card">
+				<div class="founder-image-wrapper">
+                    <img src="/images/founder1.png" alt="Founder 1">
+                </div>
+                <div class="founder-info">
+                    <h3 class="founder-name">Hina Arora</h3>
+                    <p class="founder-desc">Brief description about the founder, their industry experience, and their guiding role at Style Mantra.</p>
+                </div>
+			</div>
 		</div>
-				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-21c650f animated fadeIn" data-id="21c650f" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:500}">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-45848f9 elementor-widget elementor-widget-heading" data-id="45848f9" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h4 class="elementor-heading-title elementor-size-default">Career Support</h4>				</div>
-				</div>
-				<div class="elementor-element elementor-element-95553cf elementor-widget elementor-widget-text-editor" data-id="95553cf" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-									<p>Receive dedicated career guidance, from portfolio building to interview preparation, ensuring you’re industry-ready and confident.</p>								</div>
-				</div>
-					</div>
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element animated fadeIn" style="flex: 1; min-width: 300px;">
+			<div class="elementor-widget-wrap elementor-element-populated founder-card">
+				<div class="founder-image-wrapper">
+                    <img src="/images/founder2.jpeg" alt="Ketan Bindra">
+                </div>
+                <div class="founder-info">
+                    <h3 class="founder-name">Ketan Bindra</h3>
+                    <p class="founder-desc">Brief description about Ketan Bindra, their industry experience, and their guiding role at Style Mantra.</p>
+                </div>
+			</div>
 		</div>
-					</div>
-		</section>
-				<section class="elementor-section elementor-inner-section elementor-element elementor-element-6026939 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6026939" data-element_type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-b203bad animated fadeIn" data-id="b203bad" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:500}">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-bc96cb0 elementor-widget elementor-widget-heading" data-id="bc96cb0" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h4 class="elementor-heading-title elementor-size-default">Flexibility to learn anytime, anywhere</h4>				</div>
-				</div>
-				<div class="elementor-element elementor-element-d45001c elementor-widget elementor-widget-text-editor" data-id="d45001c" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-									<p>Enjoy the flexibility of live interactive classes and access recorded lessons anytime to learn at your own pace.</p>								</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-4acc244 animated fadeIn" data-id="4acc244" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:600}">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-b77e361 elementor-widget elementor-widget-heading" data-id="b77e361" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h4 class="elementor-heading-title elementor-size-default">Government Certification</h4>				</div>
-				</div>
-				<div class="elementor-element elementor-element-fc88ab7 elementor-widget elementor-widget-text-editor" data-id="fc88ab7" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-									<p>Earn a prestigious, government-recognized certification that adds credibility to your skills and enhances your professional profile.</p>								</div>
-				</div>
-					</div>
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element animated fadeIn" style="flex: 1; min-width: 300px;">
+			<div class="elementor-widget-wrap elementor-element-populated founder-card">
+				<div class="founder-image-wrapper">
+                    <img src="/images/founder3.jpeg" alt="Raagini Murada">
+                </div>
+                <div class="founder-info">
+                    <h3 class="founder-name">Raagini Murada</h3>
+                    <p class="founder-desc">Brief description about Raagini Murada, their industry experience, and their guiding role at Style Mantra.</p>
+                </div>
+			</div>
 		</div>
 					</div>
 		</section>
